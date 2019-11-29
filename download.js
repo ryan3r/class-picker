@@ -103,7 +103,7 @@ function processInfo(rawInfo) {
 				prettyStart: time.formattedStartTime,
 				prettyEnd: time.formattedStopTime,
 
-				// convert the single letter days into a number
+				// convert the single letter days into a bitvector
 				days: time.meetDays.split("").reduce((days, day) => {
 					// not a day
 					if(day == " ") return days;
